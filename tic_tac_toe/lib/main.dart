@@ -14,3 +14,23 @@ class TicTacToe extends StatelessWidget {
     );
   }
 }
+
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extens State<HomePage> {
+  List<String> _board = List.filled(9, '');
+  String _currentPlayer = 'X';
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Tic Tac Toe'),
+      ),
+      
+    )
+  }
+}
